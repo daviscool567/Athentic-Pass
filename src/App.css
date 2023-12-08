@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Orbitron:wght@900&family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400,600&display=swap");
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: grey lightgrey;
+}
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-thumb:vertical {
+  background-color: grey;
+}
+::-webkit-scrollbar-track-piece {
+  background-color: lightgrey;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+main {
+}
+.padding {
+  padding: 5em;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+h1 {
+  font-family: "Manrope", sans-serif;
+}
+.getStarted {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.2em;
+  margin-left: 0.7em;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.05), -3px 0px 5px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.getStarted:active {
+  box-shadow: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* dashboard */
+
+.dashboard {
+  margin: 0;
+  padding: 0;
+}
+
+.dashboard header {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  max-width: 800px;
+  padding: 0 1em;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 58px;
+  z-index: 1;
+  /* overflow: hidden; */
+  box-shadow: 0px 3px 25px rgba(0, 0, 0, 0.15);
+}
+.dashboard header a {
+  text-decoration: none;
+}
+.dashboard header .dropDown {
+  background-color: white;
+  padding: 0;
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  overflow: hidden;
+  border-radius: 100%;
+  border: none;
+  margin-left: 1em;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1), -1px -1px 1px rgba(0, 0, 0, 0.1);
+}
+.dashboard header .dropDown img {
+  display: block;
+  width: 36px;
+  height: 36px;
+  object-fit: cover;
+}
+.dashboard header .dropDown:hover {
+  opacity: 0.8;
+}
+
+.dashboard .content {
+  display: block;
+  position: relative;
+  background-color: #f8f9fb;
+  background-color: white;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 80px 1em 40px 1em;
+}
+.dashboard .userBottomLink {
+  display: none;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 99999;
+  border-top: 1px solid lightgray;
+  /* box-shadow: 0px 3px 25px rgba(0, 0, 0, 0.15); */
+}
+.dashboard .userBottomLink a {
+  display: inline-block;
+  font-size: 1.8em;
+  padding: 0.2em 12vw;
+  color: grey;
+  box-sizing: border-box;
+}
+.userStuff {
+  font-weight: 700;
+  font-size: 1.18em;
+  margin-left: 45px;
+}
+.userStuff img {
+  width: 40px;
+  height: 40px;
+  max-height: 40px;
+  max-width: 40px;
+  object-fit: contain;
+  margin-right: 0.7em;
+}
+.userLinks {
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  height: 100%;
+  box-sizing: border-box;
+}
+.userLinks a {
+  padding: 0.2em 6vw;
+  font-size: 1.8em;
+  color: grey;
+}
+.userHeader {
+  display: flex;
+  align-items: center;
+}
+.userHeader a {
+  text-decoration: none;
+}
+.userHeader span {
+  margin: 0 0.5em;
+}
+.userHeader span.notif {
+  display: inline-block;
+  position: relative;
+  font-size: 1.2em;
+  margin-right: 1em;
+  cursor: pointer;
+}
+.userHeader span.notif:hover {
+  transform: translateY(-2px);
+}
+.userHeader span.notifNum {
+  position: absolute;
+  font-size: 0.43em;
+  font-weight: bold;
+  background-color: white;
+  color: white;
+  border-radius: 50%;
+  z-index: 999;
+  left: 30%;
+  padding: 0.3em;
+  box-sizing: border-box;
+}
+.userHeader span i {
+  display: block;
+  padding: 0.1em 0.5em 0 0.3em;
+  background-color: red;
+  border-radius: 50%;
+}
+.userHeader img {
+  object-fit: fill;
+}
+.modalPassword {
+  margin-top: 7em;
+}
+
+/* dashboard */
+
+/* home nav */
+
+@media (max-width: 720px) {
+  .userStuff .compName {
+    display: none;
+  }
+}
+@media (max-width: 520px) {
+  .userLinks {
+    display: none;
+  }
+  .container h1 {
+    font-size: 1.35rem;
+  }
+  .dashboard .userBottomLink {
+    display: flex;
+  }
+}
+/* home nav */

@@ -1,0 +1,67 @@
+.homePage {
+  width: 100%;
+  max-width: 800px;
+  height: 100vh;
+  padding: 0;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.firstOne {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 25%;
+  /* margin-bottom: auto; */
+  text-shadow: 3px 3px 7px rgba(0,0,0,0.1);
+}
+.authPassImg {
+  width: 70px;
+  height: 70px;
+  display: block;
+  margin-top: 0.5em;
+}
+.homePage h3 {
+  font-weight: bolder;
+}
+.slides img {
+  /* width: 100%;
+  height: 80vw; */
+  border-radius: 1em;
+}
+.carosel {
+  position: relative;
+  /* width: 80vw;
+  height: 80vw; */
+  max-width: 400px;
+  border-radius: 1em;
+}
+.carosel .secControl {
+  display: inline-flex;
+  margin-top: 1em;
+}
+.carosel .secControl span {
+  width: 10px;
+  height: 10px;
+  margin: 0 0.3em;
+  border-radius: 50%;
+  background-color: lightgrey;
+}
+.homePage h5 {
+  font-weight: bolder;
+  margin-top: 2em;
+  text-shadow: 3px 3px 7px rgba(0,0,0,0.1);
+}
+
+.homePage button {
+  margin: 2em 0.5em;
+  text-decoration: none;
+}
+.slides a {
+  text-decoration: none;
+  color: inherit;
+}

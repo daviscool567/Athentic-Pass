@@ -1,0 +1,25 @@
+.detailImage {
+  display: block;
+  padding: 0 2em;
+  margin-bottom: 1em;
+}
+.productInfo {
+  border-top: 2px solid lightgrey;
+}
+.fxDetail {
+  display: flex;
+  margin: 1em 0;
+  font-size: 1.2em;
+  border-bottom: 1px solid lightgrey;
+}
+.pTitle {
+  width: 40%;
+  font-weight: bolder;
+}
+.pDetail {
+
+}
+.showOneHistory {
+  margin-top: 3em;
+  
+}
